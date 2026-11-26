@@ -1,16 +1,14 @@
 from abc import ABC, abstractmethod
 
-class Personaje(ABC):
+class Vuelo(ABC):
     @abstractmethod
-    def atacar(self):
+    def despegar(self):
         pass
 
 
-class Goku(Personaje):
-    @abstractmethod
-    def atacar(self):
-        return "Kame hame Ha"
+class VueloNacional(Vuelo):
+    def despegar(self):
+        return "Vuelo nacional despegando hacia Guayaquil"
 
-goku=Goku()
-print(goku.atacar())
-
+vuelo = VueloNacional()
+print(vuelo.despegar())
