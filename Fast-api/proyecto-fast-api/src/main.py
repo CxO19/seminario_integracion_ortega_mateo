@@ -3,8 +3,6 @@ from fastapi import FastAPI
 
 app = FastAPI(title="Curso FastAPI + uv")
 
-
-from fastapi import FastAPI
 from pydantic import BaseModel
 
 app = FastAPI()
